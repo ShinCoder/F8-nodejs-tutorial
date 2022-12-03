@@ -1,0 +1,161 @@
+[{
+  "_id": {
+    "$oid": "6389fe56c97218528a58f480"
+  },
+  "name": "Kiến Thức Nhập Môn IT",
+  "description": "Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.",
+  "image": "https://img.youtube.com/vi/M62l1xA5Eu8/sddefault.jpg",
+  "videoId": "M62l1xA5Eu8",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669987926917"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669987926917"
+    }
+  },
+  "slug": "kien-thuc-nhap-mon-it",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6389fedec97218528a58f485"
+  },
+  "name": "HTML CSS từ Zero đến Hero",
+  "description": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.",
+  "image": "https://img.youtube.com/vi/R6plN3FvzFY/sddefault.jpg",
+  "videoId": "R6plN3FvzFY",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669988062925"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669988062925"
+    }
+  },
+  "slug": "html-css-tu-zero-den-hero",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638a0850c97218528a58f48c"
+  },
+  "name": "Responsive Với Grid System",
+  "description": "Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.",
+  "image": "https://img.youtube.com/vi/uz5LIP85J5Y/sddefault.jpg",
+  "videoId": "uz5LIP85J5Y",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669990480793"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669990480793"
+    }
+  },
+  "slug": "responsive-voi-grid-system",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638a0879c97218528a58f490"
+  },
+  "name": "Lập Trình JavaScript Cơ Bản",
+  "description": "Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.",
+  "image": "https://img.youtube.com/vi/0SJE9dYdpps/sddefault.jpg",
+  "videoId": "0SJE9dYdpps",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669990521933"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669990521933"
+    }
+  },
+  "slug": "lap-trinh-javascript-co-ban",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638a08b2c97218528a58f494"
+  },
+  "name": "Lập Trình JavaScript Nâng Cao",
+  "description": "Hiểu sâu hơn về cách Javascript hoạt động, tìm hiểu về IIFE, closure, reference types, this keyword, bind, call, apply, prototype, ...",
+  "image": "https://img.youtube.com/vi/MGhw6XliFgo/sddefault.jpg",
+  "videoId": "MGhw6XliFgo",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669990578295"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669990578295"
+    }
+  },
+  "slug": "lap-trinh-javascript-nang-cao",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638a08dec97218528a58f498"
+  },
+  "name": "Làm việc với Terminal & Ubuntu",
+  "description": "Sở hữu một Terminal hiện đại, mạnh mẽ trong tùy biến và học cách làm việc với Ubuntu là một bước quan trọng trên con đường trở thành một Web Developer.",
+  "image": "https://img.youtube.com/vi/7ppRSaGT1uw/sddefault.jpg",
+  "videoId": "7ppRSaGT1uw",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669990622100"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669990622100"
+    }
+  },
+  "slug": "lam-viec-voi-terminal-and-ubuntu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638a0925c97218528a58f49d"
+  },
+  "name": "Xây Dựng Website với ReactJS",
+  "description": "Khóa học ReactJS từ cơ bản tới nâng cao, kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS. Cuối khóa học này bạn sẽ sở hữu một dự án giống Tiktok.com, bạn có thể tự tin đi xin việc khi nắm chắc các kiến thức được chia sẻ trong khóa học này.",
+  "image": "https://img.youtube.com/vi/x0fSBAgBrOQ/sddefault.jpg",
+  "videoId": "x0fSBAgBrOQ",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669990693892"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669990693892"
+    }
+  },
+  "slug": "xay-dung-website-voi-reactjs",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638a0948c97218528a58f4a1"
+  },
+  "name": "Node & ExpressJS",
+  "description": "Học Back-end với Node & ExpressJS framework, hiểu các khái niệm khi làm Back-end và xây dựng RESTful API cho trang web.",
+  "image": "https://img.youtube.com/vi/z2f7RHgvddc/sddefault.jpg",
+  "videoId": "z2f7RHgvddc",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669990728612"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669990728612"
+    }
+  },
+  "slug": "node-and-expressjs",
+  "__v": 0
+}]
