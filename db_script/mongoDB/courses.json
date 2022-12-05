@@ -13,11 +13,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669987926917"
+      "$numberLong": "1670221483161"
     }
   },
   "slug": "kien-thuc-nhap-mon-it",
-  "__v": 0
+  "__v": 0,
+  "deleted": true,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670221483161"
+    }
+  }
 },{
   "_id": {
     "$oid": "6389fedec97218528a58f485"
@@ -33,11 +39,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669988062925"
+      "$numberLong": "1670221447779"
     }
   },
   "slug": "html-css-tu-zero-den-hero",
-  "__v": 0
+  "__v": 0,
+  "deleted": false,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670221417429"
+    }
+  }
 },{
   "_id": {
     "$oid": "638a0850c97218528a58f48c"
@@ -53,11 +65,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669990480793"
+      "$numberLong": "1670219372160"
     }
   },
   "slug": "responsive-voi-grid-system",
-  "__v": 0
+  "__v": 0,
+  "deleted": false,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670219358604"
+    }
+  }
 },{
   "_id": {
     "$oid": "638a0879c97218528a58f490"
@@ -73,11 +91,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669990521933"
+      "$numberLong": "1670219372803"
     }
   },
   "slug": "lap-trinh-javascript-co-ban",
-  "__v": 0
+  "__v": 0,
+  "deleted": false,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670219360212"
+    }
+  }
 },{
   "_id": {
     "$oid": "638a08b2c97218528a58f494"
@@ -93,11 +117,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669990578295"
+      "$numberLong": "1670219373229"
     }
   },
   "slug": "lap-trinh-javascript-nang-cao",
-  "__v": 0
+  "__v": 0,
+  "deleted": false,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670219362160"
+    }
+  }
 },{
   "_id": {
     "$oid": "638a08dec97218528a58f498"
@@ -113,11 +143,17 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669990622100"
+      "$numberLong": "1670221485962"
     }
   },
   "slug": "lam-viec-voi-terminal-and-ubuntu",
-  "__v": 0
+  "__v": 0,
+  "deleted": true,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670221485962"
+    }
+  }
 },{
   "_id": {
     "$oid": "638a0925c97218528a58f49d"
@@ -133,17 +169,23 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669990693892"
+      "$numberLong": "1670219374174"
     }
   },
   "slug": "xay-dung-website-voi-reactjs",
-  "__v": 0
+  "__v": 0,
+  "deleted": false,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670219367109"
+    }
+  }
 },{
   "_id": {
     "$oid": "638a0948c97218528a58f4a1"
   },
   "name": "Node & ExpressJS",
-  "description": "Học Back-end với Node & ExpressJS framework, hiểu các khái niệm khi làm Back-end và xây dựng RESTful API cho trang web.",
+  "description": "Học Back-end với Node & ExpressJS framework, hiểu các khái niệm khi làm Back-end và xây dựng RESTful API cho trang web. ",
   "image": "https://img.youtube.com/vi/z2f7RHgvddc/sddefault.jpg",
   "videoId": "z2f7RHgvddc",
   "createdAt": {
@@ -153,9 +195,15 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669990728612"
+      "$numberLong": "1670219316428"
     }
   },
   "slug": "node-and-expressjs",
-  "__v": 0
+  "__v": 0,
+  "deleted": false,
+  "deletedAt": {
+    "$date": {
+      "$numberLong": "1670219310618"
+    }
+  }
 }]
