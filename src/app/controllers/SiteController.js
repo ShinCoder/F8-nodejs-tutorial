@@ -1,5 +1,6 @@
-const Course = require("../models/Course");
-const { multipleMongooseToObject } = require("../../util/mongoose");
+// const Course = require("../models/Course");
+// const { multipleMongooseToObject } = require("../../util/mongoose");
+const db = require('../../config/db/index');
 
 class SiteController {
     // [GET] /
@@ -12,12 +13,22 @@ class SiteController {
         //     }
         // });
 
-        Course.find({})
-            .then(courses => {
-                res.render('home', {
-                    courses: multipleMongooseToObject(courses)
-                });
-            })
+        // Course.find({})
+        //     .then(courses => {
+        //         res.render('home', {
+        //             courses: multipleMongooseToObject(courses)
+        //         });
+        //     })
+        //     .catch(error => next(error));
+        // db.select()
+        // .from('courses')
+        // .where('deleted', null)
+        // .then(temp => console.log(temp));
+
+        db.select()
+            .from('courses')
+            .where('deleted', null)
+            .then(courses => res.render('home', { courses: courses }))
             .catch(error => next(error));
     }
 

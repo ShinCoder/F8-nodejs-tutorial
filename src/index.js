@@ -3,7 +3,7 @@ const { engine } = require('express-handlebars');
 const methodOverride = require('method-override');
 const path = require('path');
 
-const db = require('./config/db');
+// const db = require('./config/db');
 
 const app = express();
 const port = 3000;
@@ -32,7 +32,7 @@ app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // connect to db
-db.connect();
+// db.connect();
 
 // route init
 route(app);
