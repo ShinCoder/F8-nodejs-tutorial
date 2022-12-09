@@ -28,6 +28,7 @@ class SiteController {
         db.select()
             .from('courses')
             .where('deleted', null)
+            .orWhere('deleted', 0)
             .then(courses => res.render('home', { courses: courses }))
             .catch(error => next(error));
     }

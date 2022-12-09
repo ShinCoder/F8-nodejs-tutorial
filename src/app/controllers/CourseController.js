@@ -43,35 +43,76 @@ class CourseController {
 
     // [GET] /courses/:id/edit
     edit(req, res, next) {
-        Course.findById(req.params.id)
-            .then(course => res.render('courses/edit', { course: mongooseToObject(course) }))
+        // Course.findById(req.params.id)
+        //     .then(course => res.render('courses/edit', { course: mongooseToObject(course) }))
+        //     .catch(error => next(error));
+
+        db.select()
+            .from('courses')
+            .where('_id', req.params.id)
+            .then(courses => {
+                if (courses.length === 0) throw new Error("404 not found");
+                res.render('courses/edit', { course: courses[0] })
+            })
             .catch(error => next(error));
     }
 
     // [PUT] /courses/:id
     update(req, res, next) {
-        Course.updateOne({ _id: req.params.id }, req.body)
+        // Course.updateOne({ _id: req.params.id }, req.body)
+        //     .then(() => res.redirect('/me/stored/courses'))
+        //     .catch(error => next(error));
+
+        req.body.updatedAt = (new Date).toISOString().slice(0, 19).replace('T', ' ');
+
+        db('courses')
+            .where('_id', req.params.id)
+            .update(req.body)
             .then(() => res.redirect('/me/stored/courses'))
             .catch(error => next(error));
     }
 
     // [DELETE] /courses/:id
     destroy(req, res, next) {
-        Course.delete({ _id: req.params.id })
+        // Course.delete({ _id: req.params.id })
+        //     .then(() => res.redirect('/me/stored/courses'))
+        //     .catch(error => next(error));
+
+        db('courses')
+            .where('_id', req.params.id)
+            .update({
+                'deleted': 1,
+                'deletedAt': (new Date).toISOString().slice(0, 19).replace('T', ' ')
+            })
             .then(() => res.redirect('/me/stored/courses'))
             .catch(error => next(error));
     }
 
     // [DELETE] /courses/:id/force
     forceDestroy(req, res, next) {
-        Course.deleteOne({ _id: req.params.id })
+        // Course.deleteOne({ _id: req.params.id })
+        //     .then(() => res.redirect('/me/trash/courses'))
+        //     .catch(error => next(error));
+
+        db('courses')
+            .where('_id', req.params.id)
+            .del()
             .then(() => res.redirect('/me/trash/courses'))
             .catch(error => next(error));
     }
 
     // [PATCH] /courses/:id/restore
     restore(req, res, next) {
-        Course.restore({ _id: req.params.id })
+        // Course.restore({ _id: req.params.id })
+        //     .then(() => res.redirect('/me/trash/courses'))
+        //     .catch(error => next(error));
+
+        db('courses')
+            .where('_id', req.params.id)
+            .update({
+                'deleted': 0,
+                'deletedAt': null
+            })
             .then(() => res.redirect('/me/trash/courses'))
             .catch(error => next(error));
     }
