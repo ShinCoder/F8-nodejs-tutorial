@@ -29,12 +29,12 @@ app.engine(
   engine({
     extname: '.hbs',
     helpers: {
-      sum: (a, b) => a + b
+      sum: (    a, b) => a + b
     }
   })
 );
-app.set('view engine', '.hbs');
-app.set('views', path.join(__dirname, 'resources', 'views'));
+app.set("view engine", '.hbs');
+      app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // connect to db
 db.connect();
