@@ -1,11 +1,13 @@
-const { default: mongoose } = require("mongoose");
+const { default: mongoose } = require('mongoose');
 
 module.exports = {
-    multipleMongooseToObject: function (mongooseArray) {
-        return mongooseArray.map(mongoose => { return mongoose.toObject() });
-    },
+  multipleMongooseToObject: function (mongooseArray) {
+    return mongooseArray.map((mongoose) => {
+      return mongoose.toObject();
+    });
+  },
 
-    mongooseToObject: function (mongoose) {
-        return mongoose ? mongoose.toObject() : mongoose;
-    }
-}
+  mongooseToObject: function (mongoose) {
+    return mongoose ? mongoose.toObject() : mongoose;
+  }
+};

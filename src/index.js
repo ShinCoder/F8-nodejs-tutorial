@@ -13,21 +13,26 @@ const route = require('./routes');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // body parser
-app.use(express.urlencoded({
+app.use(
+  express.urlencoded({
     extended: true
-}));
+  })
+);
 app.use(express.json());
 
 // method override
 app.use(methodOverride('_method'));
 
 // template engine
-app.engine('.hbs', engine({
-    extname: ".hbs",
+app.engine(
+  '.hbs',
+  engine({
+    extname: '.hbs',
     helpers: {
-        sum: (a, b) => (a + b)
+      sum: (a, b) => a + b
     }
-}));
+  })
+);
 app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
@@ -38,5 +43,5 @@ db.connect();
 route(app);
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`);
 });
